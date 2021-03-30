@@ -1,5 +1,6 @@
 package com.example.firebase.controller;
 
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -8,7 +9,12 @@ public class IndexController {
 	
 	@GetMapping("")
 	public String hello() {
-		return "view/index.html";
+		return "view/index2.html";
 	}
+	
+    @GetMapping("test")
+    ResponseEntity<String> getPublic() {
+        return ResponseEntity.ok("view/index2.html");
+    }
 	
 }
