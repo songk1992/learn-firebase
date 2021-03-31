@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
+
     <style>
         body {
         background: #fff;
@@ -86,14 +86,10 @@
     <button onclick="logout()">Logout</button>
 </div>
 
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
-
-<script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script>
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   var firebaseConfig = {
@@ -105,10 +101,9 @@
     appId: "1:777437220676:web:f4ef9e25c9979aca81d111",
     measurementId: "G-E3E8W4DNPY"
   };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+	</script>
 <script>
     firebase.auth().onAuthStateChanged(function(user) {
         if (user) {

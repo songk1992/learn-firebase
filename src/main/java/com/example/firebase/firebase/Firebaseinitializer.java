@@ -1,4 +1,4 @@
-package com.example.firebase;
+package com.example.firebase.firebase;
 
 import java.io.IOException;
 import java.io.InputStream;

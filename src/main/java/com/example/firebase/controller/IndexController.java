@@ -14,7 +14,7 @@ public class IndexController {
 	
     @GetMapping("test")
     ResponseEntity<String> getPublic() {
-        return ResponseEntity.ok("view/index2.html");
+        return ResponseEntity.ok("view/index.html");
     }
 	
 }
