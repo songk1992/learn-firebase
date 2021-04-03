@@ -8,38 +8,29 @@ import com.google.firebase.database.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
-@Controller
-@RequestMapping("/hello")
-public class TestController {
+@RestController
+@RequestMapping("/login")
+public class LoginApiController {
 
-    private static final String TAG = TestController.class.getSimpleName();
+    private static final String TAG = LoginApiController.class.getSimpleName();
 
     private final FirebaseService firebaseService;
 
     private UserRecord user;
 
     @Autowired
-    public TestController(FirebaseService firebaseService) {
+    public LoginApiController(FirebaseService firebaseService) {
         this.firebaseService = firebaseService;
     }
 
-
-    @GetMapping
-    public String index() {
-        return "view/login.html";
-    }
-
     @RequestMapping(value = "/auth", method = RequestMethod.POST)
-    @ResponseBody
     public ResponseEntity<Object> authFirebase(HttpServletRequest request) throws IOException, InterruptedException {
 
         final String authToken = request.getHeader("X-Firebase-Auth");

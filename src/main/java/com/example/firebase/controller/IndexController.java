@@ -9,7 +9,7 @@ public class IndexController {
 	
 	@GetMapping("")
 	public String hello() {
-		return "view/index2.html";
+		return "view/index.html";
 	}
 	
     @GetMapping("test")
