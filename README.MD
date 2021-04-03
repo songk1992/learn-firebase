@@ -37,3 +37,13 @@ https://github.com/boraerciyas/FirebaseAuthenticationSpringBoot "boraerciyas 파
 
 <br />
 
+[ 웹용 Firebase 알아보기/ 파이어베이스 공식강좌 ](
+https://firebase.google.com/codelabs/firebase-get-to-know-web#0 "웹용 Firebase 알아보기/ 파이어베이스 공식강좌")
+
+<br />
+
+[ Firebase for web (웹개발을 위한 파이어베이스) 2 Authentication ](
+https://www.slideshare.net/sungbeenjang/firebase-for-web-2-authentication "Firebase for web (웹개발을 위한 파이어베이스) 2 Authentication")
+
+<br />
+
